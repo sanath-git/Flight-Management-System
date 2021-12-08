@@ -1,6 +1,6 @@
 public class Flight {
 
-    private int flightNumber,capacity, seatsbooked=0;
+    private int flightNumber, capacity, seatsbooked = 0;
     private String flightAirline;
 
     public Flight(int flightNumber, int capacity, String flightAirline) {
@@ -38,15 +38,13 @@ public class Flight {
         this.flightAirline = flightAirline;
     }
 
-    public boolean checkSeatAvailability()
-    {
+    public boolean checkSeatAvailability() {
         System.out.println("checking is any seat is available");
 
         return true;
     }
 
-    public void updateseat()
-    {
+    public void updateseat() {
         System.out.println("updating  the seat");
         seatsbooked++;
     }

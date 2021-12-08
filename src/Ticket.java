@@ -1,5 +1,5 @@
 abstract public class Ticket {
-    private String PNRNumber,departureLocation,destinationLocation,departureDateAndTime,arrivalDateAndTime;
+    private String PNRNumber, departureLocation, destinationLocation, departureDateAndTime, arrivalDateAndTime;
     private float price;
     private boolean isCancelled = false;
     private int seatNo;
@@ -93,18 +93,17 @@ abstract public class Ticket {
     public void setPassenger(Passenger passenger) {
         this.passenger = passenger;
     }
+
     public float durationOfTheJourney() {
         System.out.println("calculating the duration");
         return 0;
     }
 
-    public void checkStatus()
-    {
+    public void checkStatus() {
         System.out.println("checking status");
     }
 
-    public void cancelTicket()
-    {
+    public void cancelTicket() {
         this.isCancelled = true;
     }
 }
