@@ -1,5 +1,5 @@
 public class Address {
-    public String street,city,state;
+    private String street,city,state;
 
     public Address(String street, String city, String state) {
         this.street = street;
@@ -7,9 +7,16 @@ public class Address {
         this.state = state;
     }
 
-    public Address getAddressDetails()
-    {
-        return this;
+    public String getStreet() {
+        return street;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getState() {
+        return state;
     }
 
     public void setStreet(String street) {

@@ -1,7 +1,7 @@
 public class Flight {
 
-    public int flightNumber,capacity, seatsbooked=0;
-    public String flightAirline;
+    private int flightNumber,capacity, seatsbooked=0;
+    private String flightAirline;
 
     public Flight(int flightNumber, int capacity, String flightAirline) {
         this.flightNumber = flightNumber;
@@ -9,9 +9,33 @@ public class Flight {
         this.flightAirline = flightAirline;
     }
 
-    public Flight getFlightDetails()
-    {
-        return this;
+
+    public int getFlightNumber() {
+        return flightNumber;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public int getSeatsbooked() {
+        return seatsbooked;
+    }
+
+    public String getFlightAirline() {
+        return flightAirline;
+    }
+
+    public void setFlightNumber(int flightNumber) {
+        this.flightNumber = flightNumber;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
+    public void setFlightAirline(String flightAirline) {
+        this.flightAirline = flightAirline;
     }
 
     public boolean checkSeatAvailability()

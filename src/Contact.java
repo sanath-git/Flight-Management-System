@@ -1,7 +1,7 @@
 public class Contact {
-    public String name;
-    public String phoneNumber;
-    public String emailId;
+    private String name;
+    private String phoneNumber;
+    private String emailId;
 
     public Contact(String name, String phoneNumber, String emailId) {
         this.name = name;
@@ -9,9 +9,16 @@ public class Contact {
         this.emailId = emailId;
     }
 
-    public Contact getContactDetails()
-    {
-        return this;
+    public String getName() {
+        return name;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getEmailId() {
+        return emailId;
     }
 
     public void setName(String name) {
