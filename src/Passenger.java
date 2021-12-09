@@ -28,6 +28,8 @@ public class Passenger {
         System.out.println("booking ticket");
     }
 
+//    creating a inner class address
+
     private static class Address {
         private String street, city, state;
 
@@ -61,7 +63,7 @@ public class Passenger {
             this.state = state;
         }
     }
-
+    //    creating a inner class Contact
     private static class Contact {
         private String name;
         private String phoneNumber;

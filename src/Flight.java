@@ -44,7 +44,7 @@ public class Flight {
         return true;
     }
 
-    public void updateseat() {
+    public void updateSeat() {
         System.out.println("updating  the seat");
         seatsbooked++;
     }

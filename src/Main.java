@@ -1,7 +1,10 @@
 public class Main {
     public static void main(String[] args) {
+//        creating Flight object to pass to Regular ticket and tourist ticket's constructor
         Flight flightRegular = new Flight(123, 30, "Spice Jet");
         Flight flightTourist = new Flight(124, 20, "Air India");
+
+//        creating passenger object to pass to Regular ticket and tourist ticket's constructor
         Passenger passengerRegular = new Passenger("sanath", "0987654321", "sanath@gmail.com", "bajakudlu", "perla", "kerala");
         Passenger passengerTourist = new Passenger("virat", "0987654334", "virat@gmail.com", "bejai", "mangalore", "karnataka");
 
